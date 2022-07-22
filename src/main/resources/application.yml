@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: user_service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/avia-user
+    username: postgres
+    password: postgre
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+
+server:
+  port: 8065
