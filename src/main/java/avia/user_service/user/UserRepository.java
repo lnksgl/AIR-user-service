@@ -1,6 +1,5 @@
-package avia.user_service.repository;
+package avia.user_service.user;
 
-import avia.user_service.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
