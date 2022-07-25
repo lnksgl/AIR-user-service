@@ -7,10 +7,10 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import static javax.persistence.GenerationType.AUTO;
 import static lombok.AccessLevel.PRIVATE;
 
 @Data
@@ -22,7 +22,7 @@ import static lombok.AccessLevel.PRIVATE;
 public class City {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = AUTO)
     Long id;
     String name;
     //TODO *-1 dependency with country
